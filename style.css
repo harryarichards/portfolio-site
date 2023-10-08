@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(216, 230, 244);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+
+a {
+    max-width: 100%;
+    max-height: 50%;
+}
+
+img {
+    border-radius: 10%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social  {
+    flex-direction: column;
+    max-width: 12.5%;
+    max-height: 25%;
+}
+
+.profile {
+    flex-direction: column;
+    max-width: 25%;
+    max-height: 25%;
+}
