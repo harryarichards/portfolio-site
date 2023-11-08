@@ -26,43 +26,41 @@
                 <img id="profile" class="blue background"  src="images/profile.png" alt="Profile">
             </div>
     
-            <div class="flex center column" style="margin-top: 80px;">
+            <div id="job-title" class="flex center column">
                 <h1>Harry Alexander Richards</h1>
                 <h2>Data Scientist and Developer</h2>
                 
             </div>
     
             <div class="flex center">
-                <ul class="flex list media">
-                    <li>
-                        <a href="https://www.linkedin.com/in/harry-richards-aa80b8136/">
-                            <img src="images/linkedin.svg" alt="LinkedIn Logo">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/harryarichards" >
-                            <img src="images/square-github.svg" alt="Github Logo">
-                        </a>
-                    </li>
-                </ul>
+                <div class="flex list media">
+                    <a href="https://www.linkedin.com/in/harry-richards-aa80b8136/">
+                        <img src="images/linkedin.svg" alt="LinkedIn Logo">
+                    </a>
+                    <a href="https://github.com/harryarichards" >
+                        <img src="images/square-github.svg" alt="Github Logo">
+                    </a>
+                </div>
             </div>
         </div>
         
         <div id="about">
             <div>
                 <div class="row">
-                    <div class="flex center about-col-1">
-                        <img class="dark background" src="images/about.png" alt="Profile">
+                    <div class=" flex center about-col-1">
+                        <img src="images/about.png" alt="Profile">
                     </div>
                     <div class="about-col-2">
-                        <h1>About</h1>
-                        <p>I'm a Data Scientist.</p>
+                        <h2>About</h2>
+                        <p>I'm a Data Scientist, currently working for a large bank in technical service management. I'm passionate about technology and using it to solve difficult problems. </p>
                         <div class="tab-titles">
-                            <p class="tab-links active-link">Skills</p>
-                            <p class="tab-links">Experience</p>
-                            <p class="tab-links">Education</p>
+                            <p class="tab-links active-link" onclick="opentab('languages')">Languages</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
                         </div>
-                        <div class="flex column" style="width:75%; height: 80%; justify-content: space-between;">
+                        <div class="flex column tab-contents active-tab" id="languages">
+                            <p>I am proficient in the below programming languages, and have limited experience using some of others (C++, C, Haskell, PROLOG, MATLAB and OCTAVE).</p>
                             <div class="flex center language">
                                 <div class="language-logo flex column center">
                                     <img src="images/python.svg" alt="Python Logo">
@@ -72,7 +70,6 @@
                                     <div class="skilled"></div>
                                 </div>
                             </div>
-
                             <div class="flex center language">
                                 <div class="language-logo flex column center">
                                     <img src="images/angular.svg" alt="AngularJS Logo">
@@ -82,7 +79,6 @@
                                     <div class="proficient"></div>
                                 </div>
                             </div>
-
                             <div class="flex center language">
                                 <div class="language-logo flex column center">
                                     <img src="images/javascript.svg" alt="JavaScript Logo">
@@ -92,7 +88,6 @@
                                     <div class="proficient"></div>
                                 </div>
                             </div>
-
                             <div class="flex center language">
                                 <div class="language-logo flex column center">
                                     <img src="images/html.svg" alt="HTML5 Logo">
@@ -102,7 +97,6 @@
                                     <div class="proficient"></div>
                                 </div>
                             </div>
-
                             <div class="flex center language">
                                 <div class="language-logo flex column center">
                                     <img src="images/css.svg" alt="CSS3 Logo">
@@ -112,13 +106,109 @@
                                     <div class="acceptable"></div>
                                 </div>
                             </div>
-                          </table>
-
+                        </div>
+                        <div class="tab-contents" id="skills">
+                            <ul class="flex wrap">
+                                <li>Machine Learning
+                                    <ul>
+                                        <li>Able to implement a range of machine leanring algorithms and techniques, such as: Regression; Classification; Clustering and Deep Learning (Neural Networks).</li>
+                                    </ul>
+                                </li>
+                                <li>Databases
+                                    <ul>
+                                        <li>Experienced in using SQL to extract data and amend/create relational databases.</li>
+                                        <li>Consistently developed robust and efficient APIs (FastAPI).</li>
+                                    </ul>
+                                </li>
+                                <li>Front-end development
+                                    <ul>
+                                        <li>Experience designing and developing responsive websites in HTML, JavaScript and CSS - utilising both React and Angular.</li>
+                                    </ul>
+                                </li>
+                                <li>CI-CD
+                                    <ul>
+                                        <li>Utilise Docker, Openshift and Kubernetes to deploy machine learning solutions.</li>
+                                        <li>Capable of streamlining deployments through automating testing and utilising Jenkins pipelines.</li>
+                                    </ul>
+                                </li>
+                                <li>Communication
+                                    <ul>
+                                        <li>A track record of being able to communicate technical solutions to large non-technical audiences.</li>
+                                    </ul>
+                                </li>
+                                <li>Collaboration
+                                    <ul>
+                                        <li>Regularly collaborate on large-scale projects utilising Git and JIRA to do so.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents column" id="experience">
+                            <ul class="flex column">
+                                <li>Data Scientist @ Barclays (2022 - Current)
+                                    <ul>
+                                        <li>Deployed anomaly detection jobs in Elastic.</li>
+                                        <li>Design and produce queries for features for machine learning algorithms. 50 metrics that were acquired manually.</li>
+                                        <li>Design SQLite databases and APIs (FastAPI).</li>
+                                        <li>Produced a natural language pipeline to process text in records, implemented LDA and other algorithms to cluster related records.</li>
+                                        <li>Developed an explainable boosting machine to approxiamte the risk an application poses to the bank.</li>
+                                    </ul>
+                                </li>
+                                <li>Data Analyst @ Barclays (2019 - 2022)
+                                    <ul>
+                                        <li>Automated manual reports (PowerPoint, Excel and charts) utilising Python.</li>
+                                        <li>Automated governance emails sent to colleagues using Python and HTML templates.</li>
+                                        <li>Onboarded the Continual Improvement module to the banks instance of ServiceNow, to support the delivery of over 1000 automations.</li>
+                                        <li>Supported the development of an in-house application for matching mentors with prospective mentees.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents flex column" id="education">
+                            <ul class="flex column">
+                                <li>Durham University (2016 - 2019)
+                                    <ul>
+                                        <li>Maths and Computer Science within Natural Sciences (BSc)</li>
+                                        <li>Upper Second Class Honours</li>
+                                    </ul>
+                                </li>
+                                <li>Kind Edwards VI College, Stourbridge (2014 - 016)
+                                    <ul>
+                                        <li>A-Level Maths: A*</li>
+                                        <li>A-Level Computer Science: A*</li>
+                                        <li>A-Level Further Maths: A</li>
+                                        <li>EPQ Game Theory: A*</li>
+                                        <li>AS-Level Physics: A</li>
+                                    </ul>
+                                </li>
+                                <li>RSA Academy, Tipton (2009 - 2014)
+                                    <ul>
+                                        <li>AS-Level Science in Society: B</li>
+                                        <li>GCSEs: 2A*s, 6 As, 3Bs</li>
+                                    </ul>
+                                </li>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links")
+        var tabContents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabName){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link");
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+
+        }
+    </script>
   </body>
 </html>

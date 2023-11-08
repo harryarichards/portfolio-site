@@ -1,11 +1,9 @@
 * {
     margin: 0;
-    padding: 0;
     font-family: 'Arial', 'sans-serif';
 }
 
 #home{
-    padding: 0;
     border: 0;
 }
 
@@ -17,42 +15,42 @@
 
 #dev-logo{
     margin-left: 30px;
-    height: 50px;
+    height: 28px;
     filter: invert(12%) sepia(87%) saturate(7500%) hue-rotate(337deg) brightness(99%) contrast(104%);
 }
 
 #profile{
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 50%;
+    /* border: 3px solid rgb(255, 255, 255); */
+    /* border-radius: 30%; */
     max-width:25%;
-    position: relative;
-    top: 60px;
+    /* position: relative;
+    top: 60px; */
+}
+
+#job-title{
+    margin-top: 60px;
 }
 
 .dark.background{
-    background-color: rgb(25, 28, 48);
-}
-
-ul{
-    list-style-type: none;
-    font-size: 28px;
-    font-weight: 500;
+    background-color: rgb(223, 223, 223);
 }
 
 h1, h2{
     color: rgb(130, 130, 130);
     margin-top: 20px;
+    font-weight: 100;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 10px 0px;
+    padding-top: 8px;
 }
 
 nav ul {
     gap: 40px;
     margin: 0 40px;
+    list-style-type: none;
 }
 
 nav ul li{
@@ -61,9 +59,9 @@ nav ul li{
 }
 
 nav ul li a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     position: relative;
 }
 
@@ -99,6 +97,10 @@ nav ul li a:hover::after {
     flex-direction: column;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
 .media{
     margin-top: 40px;
     gap: 40px;
@@ -106,7 +108,7 @@ nav ul li a:hover::after {
 
 .media *{
     height: 50px;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 /* ----about---- */
@@ -118,26 +120,25 @@ nav ul li a:hover::after {
 .row{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    min-height: 650px;
 }
 
 .about-col-1{
-    flex-basis: 35%;
+    flex-basis: 30%;
 }
 
 .about-col-2{
     flex-basis: 60%;
+    padding-left: 20px;
 }
 
 .about-col-1 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 2%;
+    width: auto;
+    height: auto;
 }
 
 .about-col-2 h1 {
     margin-top: 0;
-    font-size: 32px;
 }
 
 .tab-titles{
@@ -167,12 +168,25 @@ nav ul li a:hover::after {
     width: 50%;
 }
 
-.language-logo{
-    width: 20%;
+.tab-contents{
+    display: none;
+    height: 75%;
 }
 
-.progress-bar{
-    width: 80%;
+.tab-contents.active-tab{
+    display: flex;
+}
+
+.tab-contents.active-tab.flex{
+    display: flex;
+}
+
+#languages{
+    justify-content: space-between;
+}
+
+.language-logo{
+    width: 20%;
 }
 
 .language-logo img{
@@ -180,7 +194,8 @@ nav ul li a:hover::after {
 }
 
 .progress-bar{
-    background-color: rgb(87, 87, 87);
+    width: 80%;
+    background-color: rgb(186, 186, 186);
     border-radius: 13px;
     height: 20px;
     padding: 3px;
@@ -206,4 +221,26 @@ nav ul li a:hover::after {
     width: 60%;
     height: 20px;
     border-radius: 10px;
+}
+
+.tab-contents ul{
+    padding: 4px;
+}
+
+.tab-contents ul li, #experience, #education{
+    list-style: none;
+    margin: 10px 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tab-contents ul li ul li{
+    font-size: 16px;
+    list-style: none;
+    color: black;
+    font-weight: 100;
+}
+
+#skills ul li{
+    flex: 1 0 33.33%;
 }
