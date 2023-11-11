@@ -121,8 +121,6 @@ nav ul li a:hover::after {
     opacity: 0.7;
 }
 
-/* ----about---- */
-
 #about{
     padding: 80px 0;
     height: 80vh;
@@ -270,8 +268,6 @@ nav ul li a:hover::after {
 #menu, #exit{
     display: none;
 }
-
-/* ----portfolio---- */
 
 #portfolio{
     padding: 20px 0 0;
