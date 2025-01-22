@@ -1,0 +1,32 @@
+header li a {
+  margin: 0 20px;
+  font-size: 50px;
+}
+
+#profile {
+  position: absolute;
+  max-width: 700px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+#profile-buttons {
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+#profile-buttons li {
+  list-style: none;
+}
+
+#profile-buttons li a {
+  display: block;
+  line-height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  outline: none;
+  background-color: black;
+  color: white;
+}

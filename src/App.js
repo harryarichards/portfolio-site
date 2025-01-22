@@ -1,8 +1,8 @@
 import "./App.css";
-import Portfolio from "./Portfolio";
-import Header from "./header/Header";
-import ParticleBackground from "./ParticleBackground";
-import Profile from "./Profile";
+import Portfolio from "./components/portfolio/Portfolio";
+import Header from "./components/header/Header";
+import ParticleBackground from "./components/ParticleBackground";
+import Profile from "./components/profile/Profile";
 
 const App = () => {
   return (

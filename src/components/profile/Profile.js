@@ -1,28 +1,21 @@
 import React from "react";
+import "./profile.css"
+
 const Profile = () => {
   return (
-    <header style={{ "text-align": "center", position: "relative" }}>
-      <div style={{ height: "800px", width: "100%" }}></div>
-      <div
-        style={{
-          position: "absolute",
-          "max-width": "700px",
-          top: "50%",
-          right: "50%",
-          transform: "translate(50%, -50%)",
-        }}
-      >
+    <header style={{ "text-align": "center", position: "relative"}}>
+      <div style={{height: '500px'}}></div>
+      <div id="profile">
         <img
           src="images/profile.jpeg"
-          height="200"
-          style={{ "border-radius": "25%" }}
+          height="400"
+          style={{ "border-radius": "15%" }}
           alt=""
         />
-        <h1 style={{'font-weight':'500'}}>HARRY ALEXANDER RICHARDS</h1>
+        <h1>HARRY ALEXANDER RICHARDS</h1>
         <ul
           id="profile-buttons"
           class="flex center"
-          style={{ "margin-top": "20px", "padding-left": "0" }}
         >
           <li>
             <a href="https://www.linkedin.com/in/harry-richards-aa80b8136/">

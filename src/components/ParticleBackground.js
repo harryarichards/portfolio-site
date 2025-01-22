@@ -13,7 +13,7 @@ const ParticleBackground = () => {
   }, []);
 
   const particlesLoaded = (container) => {
-    console.log(container);
+    console.log(container)
   };
 
   const options = useMemo(
@@ -93,6 +93,7 @@ const ParticleBackground = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
+        className="ParticlesCanvasWrapper"
       />
     );
   }
