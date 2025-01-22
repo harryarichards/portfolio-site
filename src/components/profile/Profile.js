@@ -3,13 +3,11 @@ import "./profile.css"
 
 const Profile = () => {
   return (
-    <header style={{ "text-align": "center", position: "relative"}}>
-      <div style={{height: '500px'}}></div>
+    <header>
       <div id="profile">
         <img
           src="images/profile.jpeg"
           height="400"
-          style={{ "border-radius": "15%" }}
           alt=""
         />
         <h1>HARRY ALEXANDER RICHARDS</h1>
@@ -28,7 +26,7 @@ const Profile = () => {
             </a>
           </li>
         </ul>
-        <p style={{ "margin-top": "30px", "line-height": "1.5" }}>
+        <p>
           I'm Harry Richards, a <b>Software Developer</b> and <b>Data Scientist</b>. I have experience programming in multiple
           languages, across a number of technology stacks. The purpose of this
           site is to showcase projects I've worked on, and different

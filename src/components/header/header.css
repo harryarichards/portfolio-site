@@ -32,7 +32,6 @@ nav ul li a::after {
   width: 0;
   height: 1px;
   background: #000000;
-  position: absolute;
   left: 0;
   bottom: -1px;
 }

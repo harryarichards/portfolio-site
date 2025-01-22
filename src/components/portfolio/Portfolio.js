@@ -47,22 +47,22 @@ const Portfolio = () => {
           itemClass="carousel-item-padding-40-px"
         >
           <div>
-            <img src="/images/placeholder.png" width={600} height={450} />
+            <img src="/images/placeholder.png" width={600} />
           </div>
           <div>
-            <img src="/images/placeholder.png" width={600} height={450} />
+            <img src="/images/placeholder.png" width={600} />
           </div>
           <div>
-            <img src="/images/placeholder.png" width={600} height={450} />
+            <img src="/images/placeholder.png" width={600} />
           </div>
           <div>
-            <img src="/images/placeholder.png" width={600} height={450} />
+            <img src="/images/placeholder.png" width={600} />
           </div>
           <div>
-            <img src="/images/placeholder.png" width={600} height={450} />
+            <img src="/images/placeholder.png" width={600} />
           </div>
           <div>
-            <img src="/images/placeholder.png" width={600} height={450} />
+            <img src="/images/placeholder.png" width={600} />
           </div>
         </Carousel>
       </div>
